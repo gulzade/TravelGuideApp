@@ -16,6 +16,7 @@
 		FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */; };
 		FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */; };
 		FC3B62E728ECA16800F51B0D /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */; };
+		FC3B62E928ECEA3B00F51B0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FC3B628A28E7974D00F51B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */,
 				FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */,
 				FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */,
+				FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */,
 			);
 			path = TravelGuideApp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3B62E928ECEA3B00F51B0D /* SearchViewController.swift in Sources */,
 				FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */,
 				FC3B627E28E7974C00F51B0D /* ViewController.swift in Sources */,
 				FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */,
