@@ -14,6 +14,8 @@
 		FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */; };
 		FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628528E7974D00F51B0D /* Assets.xcassets */; };
 		FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */; };
+		FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */; };
+		FC3B62E728ECA16800F51B0D /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FC3B628528E7974D00F51B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3B628828E7974D00F51B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3B628A28E7974D00F51B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */,
 				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */,
+				FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */,
+				FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */,
 			);
 			path = TravelGuideApp;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */,
+				FC3B62E728ECA16800F51B0D /* ArticlesCollectionViewCell.xib in Resources */,
 				FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */,
 				FC3B628128E7974C00F51B0D /* Main.storyboard in Resources */,
 			);
@@ -143,6 +150,7 @@
 			files = (
 				FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */,
 				FC3B627E28E7974C00F51B0D /* ViewController.swift in Sources */,
+				FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */,
 				FC3B627A28E7974C00F51B0D /* AppDelegate.swift in Sources */,
 				FC3B627C28E7974C00F51B0D /* SceneDelegate.swift in Sources */,
 			);
