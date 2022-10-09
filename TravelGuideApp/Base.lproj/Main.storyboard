@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="70u-AL-N6D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Article List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelGuideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ArticleListViewController" customModule="TravelGuideApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="FlightButton"/>
+                                        <connections>
+                                            <action selector="getFlightsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ok-wE-Urb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke9-kz-aIh">
                                         <rect key="frame" x="25" y="393" width="64" height="21"/>
@@ -49,6 +52,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="HotelButton" subtitle=""/>
+                                        <connections>
+                                            <action selector="getHotelsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bS4-vM-Ta7"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where’s your  next destination?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-DH-gFb">
                                         <rect key="frame" x="30" y="210" width="259" height="76.5"/>
@@ -89,12 +95,12 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v1y-32-jHs">
-                                <rect key="frame" x="0.0" y="520" width="414" height="220"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.36470588240000001" blue="0.76059861439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="520" width="374" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="aYT-h3-47g"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sbr-2n-XOa">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sbr-2n-XOa">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -110,22 +116,30 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bae-rS-XhC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="370" id="12Q-IL-UNu"/>
-                            <constraint firstItem="v1y-32-jHs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CiO-27-sA4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9dq-kb-5f7" secondAttribute="trailing" id="IPS-sF-nhr"/>
-                            <constraint firstItem="v1y-32-jHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NEm-Td-eKd"/>
                             <constraint firstItem="v1y-32-jHs" firstAttribute="top" secondItem="bae-rS-XhC" secondAttribute="bottom" constant="30" id="PWL-vu-zvn"/>
                             <constraint firstItem="v1y-32-jHs" firstAttribute="top" secondItem="9dq-kb-5f7" secondAttribute="bottom" constant="70" id="QMH-aY-xcV"/>
                             <constraint firstItem="bae-rS-XhC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TZm-aN-Sss"/>
                             <constraint firstItem="bae-rS-XhC" firstAttribute="top" secondItem="9dq-kb-5f7" secondAttribute="bottom" constant="8" id="nMz-TW-CxU"/>
                             <constraint firstItem="v1y-32-jHs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o3p-Tv-Trd"/>
                             <constraint firstItem="9dq-kb-5f7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vNr-6t-aW4"/>
+                            <constraint firstItem="v1y-32-jHs" firstAttribute="leading" secondItem="bae-rS-XhC" secondAttribute="leading" id="zwV-GA-um7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="HomeTabBarImageUnSelected" selectedImage="HomeTabBarImageSelected" id="aIB-Y5-5EM"/>
                     <navigationItem key="navigationItem" id="Pko-6n-BJw"/>
+                    <connections>
+                        <outlet property="articlesCollectionView" destination="v1y-32-jHs" id="HAQ-Uz-uTW"/>
+                        <outlet property="flightLabel" destination="Ke9-kz-aIh" id="5KW-nq-SNQ"/>
+                        <outlet property="headTittle" destination="GuO-DH-gFb" id="uDA-RO-Xxp"/>
+                        <outlet property="homeImageView" destination="wiS-Bl-KNX" id="dwx-ce-p38"/>
+                        <outlet property="homeView" destination="9dq-kb-5f7" id="etN-7V-KWp"/>
+                        <outlet property="hotelLabel" destination="SBb-DG-eyI" id="J6f-Q9-mHX"/>
+                        <outlet property="topArticlesLabel" destination="bae-rS-XhC" id="Ldc-pJ-pcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +269,6 @@
         <!--Navigation Controller-->
         <scene sceneID="dEB-c5-DMM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZB8-PN-bgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="70u-AL-N6D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mqu-Fh-gLv">
@@ -267,6 +280,7 @@
                         <segue destination="4Az-B1-5YM" kind="relationship" relationship="rootViewController" id="nWw-vE-5EA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZB8-PN-bgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="79.6875"/>
         </scene>
@@ -277,6 +291,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="f7T-cQ-Ptd"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z8J-RN-vpu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
