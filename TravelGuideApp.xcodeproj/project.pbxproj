@@ -9,29 +9,39 @@
 /* Begin PBXBuildFile section */
 		FC3B627A28E7974C00F51B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B627928E7974C00F51B0D /* AppDelegate.swift */; };
 		FC3B627C28E7974C00F51B0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */; };
-		FC3B627E28E7974C00F51B0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B627D28E7974C00F51B0D /* ViewController.swift */; };
+		FC3B627E28E7974C00F51B0D /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */; };
 		FC3B628128E7974C00F51B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B627F28E7974C00F51B0D /* Main.storyboard */; };
 		FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */; };
 		FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628528E7974D00F51B0D /* Assets.xcassets */; };
 		FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */; };
-		FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */; };
-		FC3B62E728ECA16800F51B0D /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */; };
-		FC3B62E928ECEA3B00F51B0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */; };
+		FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */; };
+		FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */; };
+		FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */; };
+		FCE5819E28F32A0800A7A0D7 /* TopPickArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */; };
+		FCE581A028F331E700A7A0D7 /* TopArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE5819F28F331E700A7A0D7 /* TopArticles.json */; };
+		FCE581A328F335E900A7A0D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FCE581A228F335E900A7A0D7 /* Kingfisher */; };
+		FCE581A928F3367500A7A0D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCE581A828F3367500A7A0D7 /* Alamofire */; };
+		FCE581AC28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */; };
+		FCE581AD28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC3B627628E7974C00F51B0D /* TravelGuideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGuideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3B627928E7974C00F51B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC3B627D28E7974C00F51B0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		FC3B628028E7974C00F51B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3B628328E7974C00F51B0D /* TravelGuideApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelGuideApp.xcdatamodel; sourceTree = "<group>"; };
 		FC3B628528E7974D00F51B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3B628828E7974D00F51B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3B628A28E7974D00F51B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
-		FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
-		FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEntity.swift; sourceTree = "<group>"; };
+		FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListModel.swift; sourceTree = "<group>"; };
+		FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopPickArticles.json; sourceTree = "<group>"; };
+		FCE5819F28F331E700A7A0D7 /* TopArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopArticles.json; sourceTree = "<group>"; };
+		FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE581A328F335E900A7A0D7 /* Kingfisher in Frameworks */,
+				FCE581A928F3367500A7A0D7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,19 +76,55 @@
 		FC3B627828E7974C00F51B0D /* TravelGuideApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCE5819328F30C8D00A7A0D7 /* HomeModule */,
 				FC3B627928E7974C00F51B0D /* AppDelegate.swift */,
 				FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */,
-				FC3B627D28E7974C00F51B0D /* ViewController.swift */,
 				FC3B627F28E7974C00F51B0D /* Main.storyboard */,
 				FC3B628528E7974D00F51B0D /* Assets.xcassets */,
 				FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */,
 				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */,
-				FC3B62E428ECA16800F51B0D /* ArticlesCollectionViewCell.swift */,
-				FC3B62E528ECA16800F51B0D /* ArticlesCollectionViewCell.xib */,
-				FC3B62E828ECEA3B00F51B0D /* SearchViewController.swift */,
 			);
 			path = TravelGuideApp;
+			sourceTree = "<group>";
+		};
+		FCE5819328F30C8D00A7A0D7 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */,
+				FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */,
+				FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */,
+				FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */,
+				FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */,
+				FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */,
+				FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */,
+				FCE5819428F30CA500A7A0D7 /* Model */,
+				FCE5819528F30CAC00A7A0D7 /* ViewModel */,
+				FCE5819628F30CB400A7A0D7 /* View */,
+				FCE5819F28F331E700A7A0D7 /* TopArticles.json */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		FCE5819428F30CA500A7A0D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE5819528F30CAC00A7A0D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCE5819628F30CB400A7A0D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +143,10 @@
 			dependencies = (
 			);
 			name = TravelGuideApp;
+			packageProductDependencies = (
+				FCE581A228F335E900A7A0D7 /* Kingfisher */,
+				FCE581A828F3367500A7A0D7 /* Alamofire */,
+			);
 			productName = TravelGuideApp;
 			productReference = FC3B627628E7974C00F51B0D /* TravelGuideApp.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +175,10 @@
 				Base,
 			);
 			mainGroup = FC3B626D28E7974C00F51B0D;
+			packageReferences = (
+				FCE581A128F335E900A7A0D7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FCE581A728F3367500A7A0D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FC3B627728E7974C00F51B0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */,
-				FC3B62E728ECA16800F51B0D /* ArticlesCollectionViewCell.xib in Resources */,
+				FCE581AD28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib in Resources */,
 				FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */,
 				FC3B628128E7974C00F51B0D /* Main.storyboard in Resources */,
+				FCE581A028F331E700A7A0D7 /* TopArticles.json in Resources */,
+				FCE5819E28F32A0800A7A0D7 /* TopPickArticles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,11 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3B62E928ECEA3B00F51B0D /* SearchViewController.swift in Sources */,
+				FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */,
 				FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */,
-				FC3B627E28E7974C00F51B0D /* ViewController.swift in Sources */,
-				FC3B62E628ECA16800F51B0D /* ArticlesCollectionViewCell.swift in Sources */,
+				FC3B627E28E7974C00F51B0D /* ArticleListViewController.swift in Sources */,
+				FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */,
 				FC3B627A28E7974C00F51B0D /* AppDelegate.swift in Sources */,
+				FCE581AC28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift in Sources */,
+				FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */,
 				FC3B627C28E7974C00F51B0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +436,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCE581A128F335E900A7A0D7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FCE581A728F3367500A7A0D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCE581A228F335E900A7A0D7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE581A128F335E900A7A0D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FCE581A828F3367500A7A0D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE581A728F3367500A7A0D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */ = {
