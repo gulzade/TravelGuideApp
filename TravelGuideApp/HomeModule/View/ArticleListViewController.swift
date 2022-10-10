@@ -72,6 +72,11 @@ extension ArticleListViewController: ArticleslistViewModelViewProtocol {
 extension ArticleListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModelArticle.didClickItem(at: indexPath.row)
+        articlesCollectionView.deselectItem(at: indexPath, animated: true)
+        let article = articleItems[indexPath.row]
+        let detailsController = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        detailsController.article = article
+        navigationController?.pushViewController(detailsController, animated: true)
     }
 }
 
