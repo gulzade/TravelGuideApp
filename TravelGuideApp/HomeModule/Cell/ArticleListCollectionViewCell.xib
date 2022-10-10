@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ArticleListCollectionViewCell" customModule="TravelGuideApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jd5-DM-Lbu">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKe-Ve-Fe5">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="6K1-Jo-Jn4"/>
+                                    <constraint firstAttribute="height" constant="120" id="je8-ki-sCb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPERIENCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-F9-wNh">
+                                <rect key="frame" x="8" y="124" width="234" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" name="CellCategoryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful Alley Scene in Old Town in Europe at Sunset" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEo-hF-PY5">
+                                <rect key="frame" x="8" y="148" width="234" height="45.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AiQ-F9-wNh" firstAttribute="leading" secondItem="Jd5-DM-Lbu" secondAttribute="leading" constant="8" id="28o-7p-waF"/>
+                            <constraint firstItem="YEo-hF-PY5" firstAttribute="top" secondItem="AiQ-F9-wNh" secondAttribute="bottom" constant="6" id="JEe-Gc-Fev"/>
+                            <constraint firstItem="QKe-Ve-Fe5" firstAttribute="top" secondItem="Jd5-DM-Lbu" secondAttribute="top" id="SnD-af-wVg"/>
+                            <constraint firstItem="YEo-hF-PY5" firstAttribute="leading" secondItem="Jd5-DM-Lbu" secondAttribute="leading" constant="8" id="bCR-UN-Scl"/>
+                            <constraint firstAttribute="trailing" secondItem="AiQ-F9-wNh" secondAttribute="trailing" constant="8" id="f8Q-XA-FCz"/>
+                            <constraint firstAttribute="trailing" secondItem="QKe-Ve-Fe5" secondAttribute="trailing" id="gNX-G5-9t0"/>
+                            <constraint firstItem="AiQ-F9-wNh" firstAttribute="top" secondItem="QKe-Ve-Fe5" secondAttribute="bottom" constant="4" id="mpO-vG-Nbj"/>
+                            <constraint firstItem="QKe-Ve-Fe5" firstAttribute="leading" secondItem="Jd5-DM-Lbu" secondAttribute="leading" id="sQ1-2R-Awe"/>
+                            <constraint firstAttribute="trailing" secondItem="YEo-hF-PY5" secondAttribute="trailing" constant="8" id="wvI-85-DLd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jd5-DM-Lbu" secondAttribute="trailing" id="Rgd-c9-A4g"/>
+                <constraint firstAttribute="bottom" secondItem="Jd5-DM-Lbu" secondAttribute="bottom" id="WNv-sf-NwD"/>
+                <constraint firstItem="Jd5-DM-Lbu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uRR-sv-MrE"/>
+                <constraint firstItem="Jd5-DM-Lbu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xrM-Ug-WSK"/>
+            </constraints>
+            <size key="customSize" width="250" height="210"/>
+            <connections>
+                <outlet property="articleCategoryLabel" destination="AiQ-F9-wNh" id="8D7-9G-Z4Z"/>
+                <outlet property="articlePhotoImageView" destination="QKe-Ve-Fe5" id="XPq-TS-POS"/>
+                <outlet property="articleTitleLabel" destination="YEo-hF-PY5" id="az0-1D-nPt"/>
+                <outlet property="cellView" destination="Jd5-DM-Lbu" id="L06-G4-SGw"/>
+            </connections>
+            <point key="canvasLocation" x="275.36231884057975" y="185.49107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CellCategoryColor">
+            <color red="0.0" green="0.28235294117647058" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
