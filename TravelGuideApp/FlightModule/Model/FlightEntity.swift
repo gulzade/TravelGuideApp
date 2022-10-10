@@ -57,7 +57,7 @@ struct Aircraft: Codable {
 struct FlightCellViewModel { // Flight cellinin viewının modeli
 
    
-    var airportName, departureIata, arrivalIata, flightDate,flightNumber : String?
+    var airportName, departureAirport, arrivalAirport, flightDate,flightNumber, departureIata, arrivalIata, category: String?
    // let gate: Gate?
    // let departDate, returnDate: String?
   //  let duration, distance: Int?

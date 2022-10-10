@@ -18,7 +18,7 @@ class FlightListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+
         setupUI()
         viewModel.viewDelegate = self
         viewModel.didViewLoad()
@@ -29,7 +29,19 @@ class FlightListViewController: UIViewController {
 
 private extension FlightListViewController {
     func setupUI(){  // View'ı daha sadeleştirmek, basite indirgemek için fonk. içine taşıdık
+        navigationItem.title = "Flights"
        
+       navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButtonIcon")
+       navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButtonIcon")
+       navigationController?.navigationBar.topItem?.backButtonTitle = ""
+       
+    // navigationController?.navigationBar.prefersLargeTitles = true
+       self.navigationController!.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.black,
+            .font: UIFont(name: "SourceSansPro-Bold", size: 30)!
+                
+        
+        ]
         flightsTableView.delegate = self
         flightsTableView.dataSource = self
         flightsTableView.separatorColor = UIColor.white//table bucreler arası cızgının renkını arka planla aynı yaptık
@@ -56,8 +68,13 @@ extension FlightListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.didClickItem(at: indexPath.row)
+        flightsTableView.deselectRow(at: indexPath, animated: true)
+        let flight = flightList[indexPath.row]
+        let detailsController = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        detailsController.flight = flight
+        navigationController?.pushViewController(detailsController, animated: true)
     }
-    
+ 
 }
 extension FlightListViewController: UITableViewDataSource {
     
@@ -72,10 +89,9 @@ extension FlightListViewController: UITableViewDataSource {
         cell.flightImageView.kf.setImage(with: URL(string: "https://images.hdqwalls.com/wallpapers/lofoten-norway-village-aurora-northern-lights-4k-pb.jpg"))
       
         cell.flightNameLabel.text = flightList[indexPath.row].airportName!
-        print(flightList[indexPath.row].airportName!)
-       cell.setupUICell()
-      //  cell.addShadow()
-        //  cell.postDescLabel.text = "\(items[indexPath.row].departureIata!) -  \(items[indexPath.row].arrivalIata!) - \(items[indexPath.row].flightDate! )"
+        cell.flightIata.text = "\(flightList[indexPath.row].departureIata!) - \(flightList[indexPath.row].arrivalIata!)"
+        cell.setupUICell()
+   
         
         return cell
     }

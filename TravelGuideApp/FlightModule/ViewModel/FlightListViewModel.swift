@@ -39,9 +39,9 @@ private extension FlightListViewModel {
  
     @discardableResult
     func makeViewBasedModel(_ posts: [FlightData]) -> [FlightCellViewModel] { //gelen dataya göre viewbase model yapacak
-        return posts.map {.init(airportName: $0.airline?.name ?? "not found!", departureIata: $0.departure?.airport ?? "not found!" , arrivalIata: $0.arrival?.airport ?? "not found!", flightDate: convertDateFormat(inputDate: $0.departure?.scheduled! ?? "" ), flightNumber: $0.flight?.number ?? "not found!")}
+        return posts.map {.init(airportName: $0.airline?.name ?? "not found!", departureAirport: $0.departure?.airport ?? "not found!", arrivalAirport:  $0.arrival?.airport ?? "not found!", flightDate: convertDateFormat(inputDate: $0.departure?.scheduled! ?? "" ), flightNumber: $0.flight?.iata ?? "not found!", departureIata: $0.departure?.iata ?? "not found!", arrivalIata: $0.arrival?.iata ?? "not found!", category: "Flight")}
     }
-}
+}                  
 
 // MARK: - PostListModelProtocol
 extension FlightListViewModel: FlightListModelProtocol {

@@ -12,6 +12,7 @@ class FlightListTableViewCell: UITableViewCell {
     @IBOutlet weak var flightImageView: UIImageView!
     @IBOutlet weak var flightCellView: UIView!
     @IBOutlet private(set)weak var flightNameLabel: UILabel!
+    @IBOutlet weak var flightIata: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         
