@@ -31,6 +31,10 @@ class ArticleListViewController: UIViewController {
     
     
     @IBAction func getFlightsButton(_ sender: Any) {
+       let flightsVC = self.storyboard?.instantiateViewController(withIdentifier:"FlightListViewController" ) as! FlightListViewController
+       self.navigationController?.pushViewController(flightsVC, animated: true)
+        
+       
     }
     
     @IBAction func getHotelsButton(_ sender: Any) {
@@ -42,16 +46,9 @@ private extension ArticleListViewController {
     
     func setupUI(){
         articlesCollectionView.delegate = self
-        articlesCollectionView.dataSource = self
-        
+        articlesCollectionView.dataSource = self        
         let design = UICollectionViewFlowLayout()
         design.scrollDirection = .horizontal
-        /*  design.sectionInset = UIEdgeInsets(top:7, left: 7, bottom: 7, right: 7)
-         design.minimumLineSpacing = 3
-         design.minimumInteritemSpacing = 3
-         let width = UIScreen.main.bounds.width
-         let widthCell = ( width - 26) / 4
-         design.itemSize = CGSize(width: widthCell, height: widthCell)*/
         articlesCollectionView.collectionViewLayout = design
         registerCell()
     }
@@ -87,6 +84,7 @@ extension ArticleListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: articlesIdentifier, for:indexPath) as! ArticleListCollectionViewCell
         if let url = articleItems[indexPath.row].articlesImageUrl{
+            cell.articleTitleLabel.text = articleItems[indexPath.row].articlesTitle
             cell.articlePhotoImageView.kf.setImage(with: URL(string: url) )
             cell.addShadow()
             cell.setupCellUI()
@@ -103,7 +101,7 @@ extension ArticleListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 250, height:210)
+        return CGSize(width: 250 , height:210)
     }
 }
 
@@ -123,3 +121,4 @@ extension ArticleListViewController {
         
     }
 }
+

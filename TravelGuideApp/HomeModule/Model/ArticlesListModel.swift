@@ -16,7 +16,7 @@ class ArticlesListModel{
     
     var articles:[Articles] = []
     
-    func fetchData(){ // Datalar çekeliyor
+    func fetchData(){ // get data
         
         guard let path = Bundle.main.path(forResource: "TopPickArticles", ofType: "json") else {
           
@@ -29,7 +29,7 @@ class ArticlesListModel{
                    let jsonData = try Data(contentsOf: url)
                    self.articles = try JSONDecoder().decode([Articles].self, from: jsonData)
                    self.delegate?.didDataFetchProcessFinish(true)
-                   print("\n-------> response: \(self.articles)")
+                  // print("\n-------> response: \(self.articles)")
                }
                catch {
                    self.delegate?.didDataFetchProcessFinish(false)
