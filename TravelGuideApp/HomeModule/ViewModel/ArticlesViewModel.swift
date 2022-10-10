@@ -38,7 +38,7 @@ private extension ArticlesViewModel {
     
     @discardableResult
     func makeViewBasedModel(_ articles: [Articles]) -> [Articles] { //gelen dataya göre viewbase model yapacak
-        return articles.map{(.init(articlesTitle: $0.articlesId!, articlesDescription: $0.articlesDescription!, articlesId: $0.articlesTitle!, articlesImageUrl: $0.articlesImageUrl!))}
+        return articles.map{(.init(articlesTitle: $0.articlesTitle!, articlesDescription: $0.articlesDescription!, articlesId: $0.articlesId!, articlesImageUrl: $0.articlesImageUrl!))}
     }
 }
 

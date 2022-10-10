@@ -14,15 +14,28 @@
 		FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */; };
 		FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628528E7974D00F51B0D /* Assets.xcassets */; };
 		FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */; };
+		FC4D9F8328F37E4A00B0F902 /* FlightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F8228F37E4A00B0F902 /* FlightEntity.swift */; };
+		FC4D9F8528F37E8F00B0F902 /* FlightListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F8428F37E8F00B0F902 /* FlightListModel.swift */; };
+		FC4D9F8728F37EE200B0F902 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F8628F37EE200B0F902 /* FlightListViewModel.swift */; };
+		FC4D9F8928F37F8B00B0F902 /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F8828F37F8B00B0F902 /* FlightListViewController.swift */; };
+		FC4D9F8C28F3813000B0F902 /* FlightListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F8A28F3813000B0F902 /* FlightListTableViewCell.swift */; };
+		FC4D9F8D28F3813000B0F902 /* FlightListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F8B28F3813000B0F902 /* FlightListTableViewCell.xib */; };
+		FC4D9F9028F3A47400B0F902 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F8F28F3A47400B0F902 /* SourceSansPro-Bold.ttf */; };
+		FC4D9F9228F3A4B100B0F902 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9128F3A4B100B0F902 /* SourceSansPro-Regular.ttf */; };
+		FC4D9F9428F3A51F00B0F902 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9328F3A51F00B0F902 /* Montserrat-Regular.ttf */; };
+		FC4D9F9628F3A53200B0F902 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9528F3A53200B0F902 /* Montserrat-Light.ttf */; };
+		FC4D9F9828F3A54300B0F902 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9728F3A54300B0F902 /* Montserrat-SemiBold.ttf */; };
+		FC4D9F9A28F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9928F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf */; };
+		FC4D9F9C28F4579400B0F902 /* Flight.json in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9B28F4579400B0F902 /* Flight.json */; };
 		FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */; };
 		FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */; };
 		FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */; };
 		FCE5819E28F32A0800A7A0D7 /* TopPickArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */; };
-		FCE581A028F331E700A7A0D7 /* TopArticles.json in Resources */ = {isa = PBXBuildFile; fileRef = FCE5819F28F331E700A7A0D7 /* TopArticles.json */; };
 		FCE581A328F335E900A7A0D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FCE581A228F335E900A7A0D7 /* Kingfisher */; };
 		FCE581A928F3367500A7A0D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCE581A828F3367500A7A0D7 /* Alamofire */; };
 		FCE581AC28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */; };
 		FCE581AD28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */; };
+		FCE581B428F36E3400A7A0D7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE581B328F36E3300A7A0D7 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +48,26 @@
 		FC3B628528E7974D00F51B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3B628828E7974D00F51B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3B628A28E7974D00F51B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4D9F8228F37E4A00B0F902 /* FlightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEntity.swift; sourceTree = "<group>"; };
+		FC4D9F8428F37E8F00B0F902 /* FlightListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListModel.swift; sourceTree = "<group>"; };
+		FC4D9F8628F37EE200B0F902 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		FC4D9F8828F37F8B00B0F902 /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		FC4D9F8A28F3813000B0F902 /* FlightListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListTableViewCell.swift; sourceTree = "<group>"; };
+		FC4D9F8B28F3813000B0F902 /* FlightListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightListTableViewCell.xib; sourceTree = "<group>"; };
+		FC4D9F8F28F3A47400B0F902 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		FC4D9F9128F3A4B100B0F902 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		FC4D9F9328F3A51F00B0F902 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FC4D9F9528F3A53200B0F902 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		FC4D9F9728F3A54300B0F902 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FC4D9F9928F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		FC4D9F9B28F4579400B0F902 /* Flight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flight.json; sourceTree = "<group>"; };
 		FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEntity.swift; sourceTree = "<group>"; };
 		FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListModel.swift; sourceTree = "<group>"; };
 		FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopPickArticles.json; sourceTree = "<group>"; };
-		FCE5819F28F331E700A7A0D7 /* TopArticles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopArticles.json; sourceTree = "<group>"; };
 		FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleListCollectionViewCell.xib; sourceTree = "<group>"; };
+		FCE581B328F36E3300A7A0D7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,32 +102,45 @@
 		FC3B627828E7974C00F51B0D /* TravelGuideApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCE581AE28F36ADB00A7A0D7 /* Resources */,
+				FC4D9F8E28F3A44800B0F902 /* Extensions */,
+				FCE581AF28F36DF600A7A0D7 /* SearchModule */,
 				FCE5819328F30C8D00A7A0D7 /* HomeModule */,
 				FC3B627928E7974C00F51B0D /* AppDelegate.swift */,
 				FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */,
-				FC3B627F28E7974C00F51B0D /* Main.storyboard */,
-				FC3B628528E7974D00F51B0D /* Assets.xcassets */,
-				FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */,
 				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */,
+				FC4D9F8228F37E4A00B0F902 /* FlightEntity.swift */,
+				FC4D9F8428F37E8F00B0F902 /* FlightListModel.swift */,
+				FC4D9F8628F37EE200B0F902 /* FlightListViewModel.swift */,
+				FC4D9F8828F37F8B00B0F902 /* FlightListViewController.swift */,
+				FC4D9F8A28F3813000B0F902 /* FlightListTableViewCell.swift */,
+				FC4D9F8B28F3813000B0F902 /* FlightListTableViewCell.xib */,
+				FC4D9F9B28F4579400B0F902 /* Flight.json */,
 			);
 			path = TravelGuideApp;
+			sourceTree = "<group>";
+		};
+		FC4D9F8E28F3A44800B0F902 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F8F28F3A47400B0F902 /* SourceSansPro-Bold.ttf */,
+				FC4D9F9128F3A4B100B0F902 /* SourceSansPro-Regular.ttf */,
+				FC4D9F9928F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf */,
+				FC4D9F9328F3A51F00B0F902 /* Montserrat-Regular.ttf */,
+				FC4D9F9528F3A53200B0F902 /* Montserrat-Light.ttf */,
+				FC4D9F9728F3A54300B0F902 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FCE5819328F30C8D00A7A0D7 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
 				FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */,
-				FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */,
-				FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */,
-				FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */,
-				FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */,
-				FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */,
-				FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */,
 				FCE5819428F30CA500A7A0D7 /* Model */,
 				FCE5819528F30CAC00A7A0D7 /* ViewModel */,
 				FCE5819628F30CB400A7A0D7 /* View */,
-				FCE5819F28F331E700A7A0D7 /* TopArticles.json */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -109,6 +148,8 @@
 		FCE5819428F30CA500A7A0D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */,
+				FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +157,7 @@
 		FCE5819528F30CAC00A7A0D7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -123,8 +165,53 @@
 		FCE5819628F30CB400A7A0D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */,
+				FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */,
+				FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FCE581AE28F36ADB00A7A0D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B627F28E7974C00F51B0D /* Main.storyboard */,
+				FC3B628528E7974D00F51B0D /* Assets.xcassets */,
+				FC3B628728E7974D00F51B0D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCE581AF28F36DF600A7A0D7 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCE581B228F36E1800A7A0D7 /* Model */,
+				FCE581B128F36E0D00A7A0D7 /* ViewModel */,
+				FCE581B028F36E0600A7A0D7 /* View */,
+				FCE581B328F36E3300A7A0D7 /* SearchViewController.swift */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		FCE581B028F36E0600A7A0D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE581B128F36E0D00A7A0D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCE581B228F36E1800A7A0D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +280,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4D9F9628F3A53200B0F902 /* Montserrat-Light.ttf in Resources */,
+				FC4D9F9828F3A54300B0F902 /* Montserrat-SemiBold.ttf in Resources */,
+				FC4D9F9C28F4579400B0F902 /* Flight.json in Resources */,
+				FC4D9F9428F3A51F00B0F902 /* Montserrat-Regular.ttf in Resources */,
 				FC3B628928E7974D00F51B0D /* LaunchScreen.storyboard in Resources */,
+				FC4D9F8D28F3813000B0F902 /* FlightListTableViewCell.xib in Resources */,
 				FCE581AD28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib in Resources */,
+				FC4D9F9228F3A4B100B0F902 /* SourceSansPro-Regular.ttf in Resources */,
 				FC3B628628E7974D00F51B0D /* Assets.xcassets in Resources */,
 				FC3B628128E7974C00F51B0D /* Main.storyboard in Resources */,
-				FCE581A028F331E700A7A0D7 /* TopArticles.json in Resources */,
+				FC4D9F9A28F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf in Resources */,
+				FC4D9F9028F3A47400B0F902 /* SourceSansPro-Bold.ttf in Resources */,
 				FCE5819E28F32A0800A7A0D7 /* TopPickArticles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,9 +306,15 @@
 				FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */,
 				FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */,
 				FC3B627E28E7974C00F51B0D /* ArticleListViewController.swift in Sources */,
+				FCE581B428F36E3400A7A0D7 /* SearchViewController.swift in Sources */,
+				FC4D9F8328F37E4A00B0F902 /* FlightEntity.swift in Sources */,
+				FC4D9F8C28F3813000B0F902 /* FlightListTableViewCell.swift in Sources */,
 				FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */,
+				FC4D9F8728F37EE200B0F902 /* FlightListViewModel.swift in Sources */,
 				FC3B627A28E7974C00F51B0D /* AppDelegate.swift in Sources */,
+				FC4D9F8528F37E8F00B0F902 /* FlightListModel.swift in Sources */,
 				FCE581AC28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift in Sources */,
+				FC4D9F8928F37F8B00B0F902 /* FlightListViewController.swift in Sources */,
 				FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */,
 				FC3B627C28E7974C00F51B0D /* SceneDelegate.swift in Sources */,
 			);
