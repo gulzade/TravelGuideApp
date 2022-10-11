@@ -7,7 +7,24 @@
 
 import UIKit
 import Kingfisher
-class DetailViewController: UIViewController {
+
+protocol AddTodoItemProtocol {
+    func didAddedTodoItem(_ isAdded: Bool)
+}
+class DetailViewController: UIViewController, AddNewItemViewModelProtocol {
+    
+        func didItemAdd(_ isSuccess: Bool) {
+            if isSuccess {
+                // anasayfadaki listeyi güncellemek için
+                delegate?.didAddedTodoItem(true)
+                
+                dismiss(animated: true)
+            }
+        
+    }
+    
+    
+    
     
     @IBOutlet weak var detailImageBackgroundView: UIView!
     @IBOutlet weak var detailImageView: UIImageView!
@@ -16,6 +33,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
     
+    var delegate: AddTodoItemProtocol?
+    private let viewModel = AddNewItemViewModel()
     var hotel: HotelCellViewModel?
     var flight : FlightCellViewModel?
     var article: Articles?
@@ -24,6 +43,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.viewDelegate = self
        
         if flight != nil {
             if let flight = flight {
@@ -60,7 +80,13 @@ class DetailViewController: UIViewController {
         detailImageView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
     
-    @IBAction func addBookmarkButton(_ sender: Any) {
+    @IBAction func addBookmarksButton(_ sender: UIButton) {
+        
+        guard let itemTitle = detailTitle.text else { return }
+        guard let itemDetails = detailDescriptionLabel.text else { return }
+        
+        viewModel.didSaveButtonPressed(name: itemTitle, details: itemDetails)
     }
-    
+  
+
 }
