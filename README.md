@@ -66,4 +66,8 @@ The articles part is completely pulled from the json file.
 #### Third-party Library
   - Kingfisher - You can dowload with this link from XCode File - Add Packages : https://github.com/onevcat/Kingfisher
   - Alamofire  - You can dowload with this link from XCode File - Add Packages: https://github.com/Alamofire/Alamofire
+
+https://user-images.githubusercontent.com/32436596/195029418-9bf785e7-139b-4ce4-9db3-e6327586950b.mp4
+
+
  
