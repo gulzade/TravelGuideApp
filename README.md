@@ -1,7 +1,6 @@
 # TravelGuideApp
 
-<img width="332" alt="appIcon" src="https://user-images.githubusercontent.com/32436596/195017387-1ef9cad2-b5c5-4f02-ba82-97359fe835bc.png">
-
+<img width="1300" height="550" alt="appIcon" src="https://user-images.githubusercontent.com/32436596/195032896-7b622d45-3d53-4c0e-98cc-0d500926ead6.png">
 
 ### Description
 
