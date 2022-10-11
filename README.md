@@ -48,6 +48,7 @@ The articles part is completely pulled from the json file.
 #### UIKit
   - CollectionView
   - TableView
+  - Scroll View
   - Color Well
   - Auto Layout
   - TabBar
