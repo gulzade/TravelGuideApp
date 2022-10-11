@@ -27,6 +27,7 @@
 		FC4D9F9828F3A54300B0F902 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9728F3A54300B0F902 /* Montserrat-SemiBold.ttf */; };
 		FC4D9F9A28F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9928F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf */; };
 		FC4D9F9C28F4579400B0F902 /* Flight.json in Resources */ = {isa = PBXBuildFile; fileRef = FC4D9F9B28F4579400B0F902 /* Flight.json */; };
+		FC4D9F9F28F4A1D700B0F902 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9F9E28F4A1D700B0F902 /* DetailViewController.swift */; };
 		FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */; };
 		FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */; };
 		FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */; };
@@ -61,6 +62,7 @@
 		FC4D9F9728F3A54300B0F902 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		FC4D9F9928F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		FC4D9F9B28F4579400B0F902 /* Flight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flight.json; sourceTree = "<group>"; };
+		FC4D9F9E28F4A1D700B0F902 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEntity.swift; sourceTree = "<group>"; };
 		FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListModel.swift; sourceTree = "<group>"; };
 		FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
@@ -102,20 +104,14 @@
 		FC3B627828E7974C00F51B0D /* TravelGuideApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC4D9FA628F4E72C00B0F902 /* SuppertedFiles */,
+				FC4D9FA028F4E69B00B0F902 /* FlightModule */,
+				FC4D9F9D28F4A00500B0F902 /* DetailModule */,
 				FCE581AE28F36ADB00A7A0D7 /* Resources */,
 				FC4D9F8E28F3A44800B0F902 /* Extensions */,
 				FCE581AF28F36DF600A7A0D7 /* SearchModule */,
 				FCE5819328F30C8D00A7A0D7 /* HomeModule */,
-				FC3B627928E7974C00F51B0D /* AppDelegate.swift */,
-				FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */,
-				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC3B628228E7974C00F51B0D /* TravelGuideApp.xcdatamodeld */,
-				FC4D9F8228F37E4A00B0F902 /* FlightEntity.swift */,
-				FC4D9F8428F37E8F00B0F902 /* FlightListModel.swift */,
-				FC4D9F8628F37EE200B0F902 /* FlightListViewModel.swift */,
-				FC4D9F8828F37F8B00B0F902 /* FlightListViewController.swift */,
-				FC4D9F8A28F3813000B0F902 /* FlightListTableViewCell.swift */,
-				FC4D9F8B28F3813000B0F902 /* FlightListTableViewCell.xib */,
 				FC4D9F9B28F4579400B0F902 /* Flight.json */,
 			);
 			path = TravelGuideApp;
@@ -134,10 +130,83 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FC4D9F9D28F4A00500B0F902 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F9E28F4A1D700B0F902 /* DetailViewController.swift */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		FC4D9FA028F4E69B00B0F902 /* FlightModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9FA428F4E6BD00B0F902 /* Cell */,
+				FC4D9FA328F4E6B800B0F902 /* Model */,
+				FC4D9FA228F4E6AF00B0F902 /* ViewModel */,
+				FC4D9FA128F4E6AA00B0F902 /* View */,
+			);
+			path = FlightModule;
+			sourceTree = "<group>";
+		};
+		FC4D9FA128F4E6AA00B0F902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F8828F37F8B00B0F902 /* FlightListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC4D9FA228F4E6AF00B0F902 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F8628F37EE200B0F902 /* FlightListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC4D9FA328F4E6B800B0F902 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F8228F37E4A00B0F902 /* FlightEntity.swift */,
+				FC4D9F8428F37E8F00B0F902 /* FlightListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC4D9FA428F4E6BD00B0F902 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D9F8A28F3813000B0F902 /* FlightListTableViewCell.swift */,
+				FC4D9F8B28F3813000B0F902 /* FlightListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC4D9FA528F4E70F00B0F902 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */,
+				FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FC4D9FA628F4E72C00B0F902 /* SuppertedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B628A28E7974D00F51B0D /* Info.plist */,
+				FC3B627928E7974C00F51B0D /* AppDelegate.swift */,
+				FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */,
+			);
+			path = SuppertedFiles;
+			sourceTree = "<group>";
+		};
 		FCE5819328F30C8D00A7A0D7 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
 				FCE5819D28F32A0800A7A0D7 /* TopPickArticles.json */,
+				FC4D9FA528F4E70F00B0F902 /* Cell */,
 				FCE5819428F30CA500A7A0D7 /* Model */,
 				FCE5819528F30CAC00A7A0D7 /* ViewModel */,
 				FCE5819628F30CB400A7A0D7 /* View */,
@@ -166,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				FC3B627D28E7974C00F51B0D /* ArticleListViewController.swift */,
-				FCE581AA28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift */,
-				FCE581AB28F3388400A7A0D7 /* ArticleListCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +382,7 @@
 				FC4D9F8528F37E8F00B0F902 /* FlightListModel.swift in Sources */,
 				FCE581AC28F3388400A7A0D7 /* ArticleListCollectionViewCell.swift in Sources */,
 				FC4D9F8928F37F8B00B0F902 /* FlightListViewController.swift in Sources */,
+				FC4D9F9F28F4A1D700B0F902 /* DetailViewController.swift in Sources */,
 				FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */,
 				FC3B627C28E7974C00F51B0D /* SceneDelegate.swift in Sources */,
 			);
