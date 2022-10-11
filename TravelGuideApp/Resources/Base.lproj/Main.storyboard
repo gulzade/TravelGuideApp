@@ -170,8 +170,12 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfP-ec-jx7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="425"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DetailImage" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-3t-DwZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="436"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DetailImage" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-3t-DwZ">
+                                        <rect key="frame" x="0.0" y="-42" width="414" height="436"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="EId-tK-kAV"/>
+                                            <constraint firstAttribute="height" constant="436" id="hmZ-rF-LlB"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -441,7 +445,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhW-O1-EDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4022" y="-818"/>
+            <point key="canvasLocation" x="5100" y="-950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dEB-c5-DMM">
@@ -487,6 +491,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
             </objects>
             <point key="canvasLocation" x="1036" y="54"/>
         </scene>
+        <!--Hotels-->
+        <scene sceneID="F3D-nH-Mh5">
+            <objects>
+                <viewController storyboardIdentifier="HotelListViewController" title="Hotels" id="Ny5-Cq-rJE" userLabel="Hotels" customClass="HotelListViewController" customModule="TravelGuideApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hy5-l6-iu5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-zL-UE3" userLabel="Hotels Table View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kW3-7T-jwm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ylG-zL-UE3" secondAttribute="bottom" id="4R6-Eo-YcT"/>
+                            <constraint firstItem="ylG-zL-UE3" firstAttribute="trailing" secondItem="kW3-7T-jwm" secondAttribute="trailing" id="8mX-h1-n8y"/>
+                            <constraint firstItem="ylG-zL-UE3" firstAttribute="top" secondItem="kW3-7T-jwm" secondAttribute="top" id="Pc0-oJ-fGY"/>
+                            <constraint firstItem="ylG-zL-UE3" firstAttribute="leading" secondItem="kW3-7T-jwm" secondAttribute="leading" id="o8k-DN-EhJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hotelsTableView" destination="ylG-zL-UE3" id="ztm-Jo-iOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7l-Pu-Z84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3945" y="-818"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BookmarksTabBarIconSelected" width="68" height="48"/>
@@ -511,10 +545,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="detailDescriptionColor">
-            <color red="0.22352941176470589" green="0.25490196078431371" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.22400000691413879" green="0.25499999523162842" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="titleColor">
-            <color red="0.039215686274509803" green="0.15294117647058825" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.039000000804662704" green="0.15299999713897705" blue="0.32499998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

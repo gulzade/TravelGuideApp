@@ -7,15 +7,26 @@
 
 import Foundation
 
-struct Hotels: Codable {
-    let result: [Result]?
+struct HotelsData: Codable {
+    let result: [Hotels]?
 }
 
 
-struct Result: Codable {
+struct Hotels: Codable {
     
-    let hotelID, hotelName, hotelCountry, hotelCity: String?
-    let hotelImageURL: String?
+    let hotel_id, hotelName, hotelCountry, hotelCity: String?
+    let hotelImageUrl: String?
     let category, hotelDescription: String?
 
+}
+struct HotelCellViewModel { // Hotel cell view model
+    
+    var hotelId : String?
+    var hotelName: String?
+    var hotelCountry: String?
+    var hotelCity:String?
+    var hotelImageURL: String?
+    var category: String?
+    var hotelDescription: String?
+    
 }

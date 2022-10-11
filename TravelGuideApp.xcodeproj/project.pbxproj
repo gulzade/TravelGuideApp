@@ -33,6 +33,8 @@
 		FC4D9FB328F5182D00B0F902 /* HotelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9FB228F5182D00B0F902 /* HotelListViewModel.swift */; };
 		FC4D9FB528F5183E00B0F902 /* HotelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9FB428F5183E00B0F902 /* HotelEntity.swift */; };
 		FC4D9FB728F5184B00B0F902 /* HotelListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D9FB628F5184B00B0F902 /* HotelListModel.swift */; };
+		FCA51CED28F5254100709451 /* HotelListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA51CEB28F5254100709451 /* HotelListTableViewCell.swift */; };
+		FCA51CEE28F5254100709451 /* HotelListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA51CEC28F5254100709451 /* HotelListTableViewCell.xib */; };
 		FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */; };
 		FCE5819A28F3133600A7A0D7 /* ArticlesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */; };
 		FCE5819C28F3138400A7A0D7 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */; };
@@ -73,6 +75,8 @@
 		FC4D9FB228F5182D00B0F902 /* HotelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListViewModel.swift; sourceTree = "<group>"; };
 		FC4D9FB428F5183E00B0F902 /* HotelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelEntity.swift; sourceTree = "<group>"; };
 		FC4D9FB628F5184B00B0F902 /* HotelListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListModel.swift; sourceTree = "<group>"; };
+		FCA51CEB28F5254100709451 /* HotelListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListTableViewCell.swift; sourceTree = "<group>"; };
+		FCA51CEC28F5254100709451 /* HotelListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelListTableViewCell.xib; sourceTree = "<group>"; };
 		FCE5819728F3122800A7A0D7 /* ArticlesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEntity.swift; sourceTree = "<group>"; };
 		FCE5819928F3133600A7A0D7 /* ArticlesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListModel.swift; sourceTree = "<group>"; };
 		FCE5819B28F3138400A7A0D7 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		FC4D9FAF28F517D200B0F902 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				FCA51CEB28F5254100709451 /* HotelListTableViewCell.swift */,
+				FCA51CEC28F5254100709451 /* HotelListTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				FC3B628128E7974C00F51B0D /* Main.storyboard in Resources */,
 				FC4D9FAA28F50C8D00B0F902 /* Hotels.json in Resources */,
 				FC4D9F9A28F3A74C00B0F902 /* SourceSansPro-SemiBold.ttf in Resources */,
+				FCA51CEE28F5254100709451 /* HotelListTableViewCell.xib in Resources */,
 				FC4D9F9028F3A47400B0F902 /* SourceSansPro-Bold.ttf in Resources */,
 				FCE5819E28F32A0800A7A0D7 /* TopPickArticles.json in Resources */,
 			);
@@ -428,6 +435,7 @@
 			files = (
 				FCE5819828F3122800A7A0D7 /* ArticlesEntity.swift in Sources */,
 				FC3B628428E7974C00F51B0D /* TravelGuideApp.xcdatamodeld in Sources */,
+				FCA51CED28F5254100709451 /* HotelListTableViewCell.swift in Sources */,
 				FC3B627E28E7974C00F51B0D /* ArticleListViewController.swift in Sources */,
 				FCE581B428F36E3400A7A0D7 /* SearchViewController.swift in Sources */,
 				FC4D9F8328F37E4A00B0F902 /* FlightEntity.swift in Sources */,

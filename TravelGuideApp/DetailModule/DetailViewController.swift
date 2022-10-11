@@ -15,7 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailscrollView: UIScrollView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
-    var hotel: FlightCellViewModel?
+    
+    var hotel: HotelCellViewModel?
     var flight : FlightCellViewModel?
     var article: Articles?
     private var checkButton: Bool?
@@ -38,6 +39,14 @@ class DetailViewController: UIViewController {
                 detailTitle.text = article.articlesTitle!
                 detailDescriptionLabel.text = article.articlesDescription!
             }
+        }
+        else if hotel != nil {
+            if let hotel = hotel {
+                detailImageView.kf.setImage(with: URL(string: (hotel.hotelImageURL!)))
+            detailCategoriesLabel.text = hotel.category!
+            detailTitle.text = hotel.hotelName!
+            detailDescriptionLabel.text = hotel.hotelDescription
+        }
         }
         setupUI()
     }

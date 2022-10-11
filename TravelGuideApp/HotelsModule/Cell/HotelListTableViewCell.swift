@@ -1,34 +1,36 @@
 //
-//  FlightListTableViewCell.swift
+//  HotelListTableViewCell.swift
 //  TravelGuideApp
 //
-//  Created by Gülzade Karataş on 10.10.2022.
+//  Created by Gülzade Karataş on 11.10.2022.
 //
 
 import UIKit
 
-class FlightListTableViewCell: UITableViewCell {
+class HotelListTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var hotelView: UIView!
+    @IBOutlet weak var hotelImageView: UIImageView!
+    @IBOutlet weak var hotelName: UILabel!
+    @IBOutlet weak var hotelCountry: UILabel!
     
-    @IBOutlet weak var flightImageView: UIImageView!
-    @IBOutlet weak var flightCellView: UIView!
-    @IBOutlet private(set)weak var flightNameLabel: UILabel!
-    @IBOutlet weak var flightIata: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+       
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        
+
+       
     }
-    func setupUICell(){
+    func setupUIHotelCell(){
         
-        flightImageView.clipsToBounds = true
-        flightImageView.layer.cornerRadius = 10
-        flightCellView.layer.cornerRadius = 10
-        flightCellView.clipsToBounds = true
+        hotelImageView.clipsToBounds = true
+        hotelImageView.layer.cornerRadius = 10
+        hotelImageView.layer.cornerRadius = 10
+        hotelImageView.clipsToBounds = true
         
     }
     override func layoutSubviews() {

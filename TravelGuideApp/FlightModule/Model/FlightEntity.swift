@@ -10,15 +10,13 @@ struct FlightResponse: Codable {
     var data: [FlightData]?
 }
 struct FlightData : Codable{
-    var flightDate: String?
-   // var flightStatus: String?
+    var flight_date: String?
     var departure : Departure?
     var arrival: Arrival?
     var airline: Airline?
     var flight: Flight?
-//    var aircraft: Aircraft?
-
-
+    
+    
 }
 struct Departure: Codable {
     
@@ -38,28 +36,20 @@ struct Arrival: Codable {
     var delay: Int?
     var scheduled, estimated: String?
     var actual, estimatedRunway, actualRunway: String?
-
+    
 }
 
 struct Airline: Codable {
     var name, iata, icao: String?
 }
 
-
 struct Flight: Codable {
     var number, iata, icao: String?
-
-}
-struct Aircraft: Codable {
-    var registration, iata, icao, icao24: String?
+    
 }
 
-struct FlightCellViewModel { // Flight cellinin viewının modeli
-
-   
+struct FlightCellViewModel { // Flight cell view model
+    
     var airportName, departureAirport, arrivalAirport, flightDate,flightNumber, departureIata, arrivalIata, category: String?
-   // let gate: Gate?
-   // let departDate, returnDate: String?
-  //  let duration, distance: Int?
-
+    
 }

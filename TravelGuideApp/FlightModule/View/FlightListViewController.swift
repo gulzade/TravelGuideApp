@@ -14,7 +14,7 @@ class FlightListViewController: UIViewController {
     private let flightsCellIdentifier = "FlightListTableViewCell"
     private let viewModel = FlightListViewModel() //viewModel instance
     private var flightList: [FlightCellViewModel] = []
-    let emptyTransparentRowHeight: CGFloat = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,8 +34,6 @@ private extension FlightListViewController {
        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButtonIcon")
        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButtonIcon")
        navigationController?.navigationBar.topItem?.backButtonTitle = ""
-       
-    // navigationController?.navigationBar.prefersLargeTitles = true
        self.navigationController!.navigationBar.titleTextAttributes = [
             .foregroundColor: UIColor.black,
             .font: UIFont(name: "SourceSansPro-Bold", size: 30)!

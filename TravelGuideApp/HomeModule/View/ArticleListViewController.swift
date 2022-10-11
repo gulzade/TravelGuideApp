@@ -38,6 +38,8 @@ class ArticleListViewController: UIViewController {
     }
     
     @IBAction func getHotelsButton(_ sender: Any) {
+        let hotelsVC = self.storyboard?.instantiateViewController(withIdentifier:"HotelListViewController" ) as! HotelListViewController
+        self.navigationController?.pushViewController(hotelsVC, animated: true)
     }
     
 }

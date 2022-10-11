@@ -38,12 +38,12 @@ class FlightListViewModel {
 private extension FlightListViewModel {
  
     @discardableResult
-    func makeViewBasedModel(_ posts: [FlightData]) -> [FlightCellViewModel] { //gelen dataya göre viewbase model yapacak
-        return posts.map {.init(airportName: $0.airline?.name ?? "not found!", departureAirport: $0.departure?.airport ?? "not found!", arrivalAirport:  $0.arrival?.airport ?? "not found!", flightDate: convertDateFormat(inputDate: $0.departure?.scheduled! ?? "" ), flightNumber: $0.flight?.iata ?? "not found!", departureIata: $0.departure?.iata ?? "not found!", arrivalIata: $0.arrival?.iata ?? "not found!", category: "Flight")}
+    func makeViewBasedModel(_ flights: [FlightData]) -> [FlightCellViewModel] { //gelen dataya göre viewbase model yapacak
+        return flights.map {.init(airportName: $0.airline?.name ?? "not found!", departureAirport: $0.departure?.airport ?? "not found!", arrivalAirport:  $0.arrival?.airport ?? "not found!", flightDate: convertDateFormat(inputDate: $0.departure?.scheduled! ?? "" ), flightNumber: $0.flight?.iata ?? "not found!", departureIata: $0.departure?.iata ?? "not found!", arrivalIata: $0.arrival?.iata ?? "not found!", category: "Flight")}
     }
 }                  
 
-// MARK: - PostListModelProtocol
+// MARK: - FlightListModelProtocol
 extension FlightListViewModel: FlightListModelProtocol {
    
     func didDataFetchProcessFinish(_ isSuccess: Bool) {  /*Api'den gelen data burada. ViewModel, Modeldan gelen datayı transform edicek */
