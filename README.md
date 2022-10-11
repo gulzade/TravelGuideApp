@@ -60,7 +60,7 @@ The articles part is completely pulled from the json file.
   
 #### Design Pattern Architecture
   - MVVM 
-  - 
+  
 #### Design
   - https://www.figma.com/file/WLJX33QX4BCP73bQLwBFBt/New-Travel-App---Responsive-UI-Shot-(Community)?node-id=1%3A81
   
