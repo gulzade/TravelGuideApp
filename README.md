@@ -57,9 +57,10 @@ The articles part is completely pulled from the json file.
   
 #### Design Pattern Architecture
   - MVVM 
+  - 
 #### Design
   - https://www.figma.com/file/WLJX33QX4BCP73bQLwBFBt/New-Travel-App---Responsive-UI-Shot-(Community)?node-id=1%3A81
-  -
+  
 #### Third-party Library
   - Kingfisher - You can dowload with this link from XCode File - Add Packages : https://github.com/onevcat/Kingfisher
   - Alamofire  - You can dowload with this link from XCode File - Add Packages: https://github.com/Alamofire/Alamofire
