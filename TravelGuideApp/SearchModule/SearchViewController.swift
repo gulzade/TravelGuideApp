@@ -8,25 +8,21 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    @IBOutlet weak var PageTitleLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.navigationController?.navigationItem.title = "Search"
-        let appearance = UINavigationBarAppearance()
-       
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont(name: "SourceSansPro-Bold", size: 30)!]
-        self.navigationController?.navigationBar.barStyle = .black //saatin rengi değiştiriliyor şarş göstergesi
-        
-        
-        self.navigationController?.navigationBar.standardAppearance = appearance
-        self.navigationController?.navigationBar.compactAppearance = appearance
-        self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
-     
         configureSearchBarTextField()
     }
-    
+    private func setupUI(){
+        
+        
+        
+        
+    }
     func configureSearchBarTextField() {
         searchBar.layer.borderColor = UIColor(named: "ColorGray")?.cgColor
         searchBar.layer.borderWidth = 1.0
@@ -41,7 +37,11 @@ class SearchViewController: UIViewController {
         searchBar.backgroundColor =  UIColor.white
         searchBar.clipsToBounds = true
     }
-
-   
-
+    
+    
+    @IBAction func getHotelButton(_ sender: Any) {
+    }
+    
+    @IBAction func getFlightButton(_ sender: Any) {
+    }
 }
