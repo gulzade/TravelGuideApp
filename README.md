@@ -56,6 +56,7 @@ The articles part is completely pulled from the json file.
 #### Network
   - Api : https://aviationstack.com/documentation
   - CoreData
+  - Mock Data - JSON File
   
 #### Design Pattern Architecture
   - MVVM 
