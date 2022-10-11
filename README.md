@@ -10,6 +10,7 @@
 - The information of the selected cell in the Flights Table view is displayed on the generic detail screen.
 - When the Hotel button is pressed, data is taken from the Hotels json file. The captured data is displayed using the table view on the Hotel view screen.
 - The information of the selected cell in the Hotels Table view is displayed on the generic detail screen.
+- Sourcetree app was used. git flow structure implemented. Worked in development branch and merged into main branch.
 
 ### Home
 - It is our home screen. This screen appears on first boot Best Choice
@@ -34,6 +35,8 @@ The articles part is completely pulled from the json file.
 
 #### Swift
   - Delegate
+  - Protocol
+  - Extensions
   - POP
   - OOP
   - Date
@@ -54,7 +57,10 @@ The articles part is completely pulled from the json file.
   
 #### Design Pattern Architecture
   - MVVM 
-
+#### Design
+  - https://www.figma.com/file/WLJX33QX4BCP73bQLwBFBt/New-Travel-App---Responsive-UI-Shot-(Community)?node-id=1%3A81
+  -
 #### Third-party Library
   - Kingfisher - You can dowload with this link from XCode File - Add Packages : https://github.com/onevcat/Kingfisher
   - Alamofire  - You can dowload with this link from XCode File - Add Packages: https://github.com/Alamofire/Alamofire
+ 
