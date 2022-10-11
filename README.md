@@ -5,9 +5,16 @@
 
 ### Description
 
+- Articles are pulled from the Article json file and displayed in the collection view on the homepage.
+- When the flight button is pressed, data is retrieved from https://aviationstack.com/documentation with Alamofire. The captured data is displayed using the table view on the Flight view screen.
+- The information of the selected cell in the Flights Table view is displayed on the generic detail screen.
+- When the Hotel button is pressed, data is taken from the Hotels json file. The captured data is displayed using the table view on the Hotel view screen.
+- The information of the selected cell in the Hotels Table view is displayed on the generic detail screen.
+
 ### Home
 - It is our home screen. This screen appears on first boot Best Choice
 The articles part is completely pulled from the json file.
+
 
 ### Flights & Hotels Detail
 - These are the screens that will be opened when the Flights and Hotels buttons on the main page are pressed. It is loaded by the *api query.
@@ -50,3 +57,4 @@ The articles part is completely pulled from the json file.
 
 #### Third-party Library
   - Kingfisher - You can dowload with this link from XCode File - Add Packages : https://github.com/onevcat/Kingfisher
+  - Alamofire  - You can dowload with this link from XCode File - Add Packages: https://github.com/Alamofire/Alamofire
