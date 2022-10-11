@@ -104,6 +104,7 @@
 		FC3B627828E7974C00F51B0D /* TravelGuideApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC4D9FA628F4E72C00B0F902 /* SuppertedFiles */,
 				FC4D9FA028F4E69B00B0F902 /* FlightModule */,
 				FC4D9F9D28F4A00500B0F902 /* DetailModule */,
@@ -195,7 +196,6 @@
 		FC4D9FA628F4E72C00B0F902 /* SuppertedFiles */ = {
 			isa = PBXGroup;
 			children = (
-				FC3B628A28E7974D00F51B0D /* Info.plist */,
 				FC3B627928E7974C00F51B0D /* AppDelegate.swift */,
 				FC3B627B28E7974C00F51B0D /* SceneDelegate.swift */,
 			);
