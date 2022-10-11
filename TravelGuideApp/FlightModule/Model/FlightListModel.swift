@@ -32,7 +32,7 @@ class FlightListModel {
                    let flightdata = try JSONDecoder().decode(FlightResponse.self, from: jsonData)
                    self.flightDataList = flightdata.data ?? []
                    self.delegate?.didDataFetchProcessFinish(true)
-                  // print("\n-------> response: \(self.articles)")
+                
                }
                catch {
                    self.delegate?.didDataFetchProcessFinish(false)

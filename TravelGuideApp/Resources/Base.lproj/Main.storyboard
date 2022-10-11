@@ -253,7 +253,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
                                     <color key="baseBackgroundColor" name="BookmarkButtonColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="addBookmarkButton:" destination="J8A-p2-jZU" eventType="touchUpInside" id="8bf-ix-jKk"/>
+                                    <action selector="addBookmarksButton:" destination="J8A-p2-jZU" eventType="touchUpInside" id="eIp-E1-vIF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,10 +320,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
             </objects>
             <point key="canvasLocation" x="3142" y="-818"/>
         </scene>
-        <!--View Controller-->
+        <!--Bookmarks View Controller-->
         <scene sceneID="3Ii-gQ-um6">
             <objects>
-                <viewController id="nfg-TX-DkT" sceneMemberID="viewController">
+                <viewController id="nfg-TX-DkT" customClass="BookmarksViewController" customModule="TravelGuideApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kxg-kC-c75">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -432,21 +432,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
             </objects>
             <point key="canvasLocation" x="3808.6956521739135" y="239.73214285714283"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="eAu-li-g3r">
-            <objects>
-                <viewController id="x9d-fN-DKV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZUN-ba-pYw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Go4-yv-RRQ"/>
-                        <color key="backgroundColor" name="ViewBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dhW-O1-EDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5100" y="-950"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dEB-c5-DMM">
             <objects>
@@ -540,9 +525,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum 
         </namedColor>
         <namedColor name="CellCategoryColor">
             <color red="0.0" green="0.28235294117647058" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="ViewBackgroundColor">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="detailDescriptionColor">
             <color red="0.22400000691413879" green="0.25499999523162842" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
