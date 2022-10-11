@@ -12,6 +12,8 @@
 - The information of the selected cell in the Hotels Table view is displayed on the generic detail screen.
 - Sourcetree app was used. git flow structure implemented. Worked in development branch and merged into main branch.
 
+Note: When the flight button is pressed, there may be a delay in loading the screen because the number of data retrieved from the API is high. Wait for a while after pressing the button.
+
 ### Home
 - It is our home screen. This screen appears on first boot Best Choice
 The articles part is completely pulled from the json file.
