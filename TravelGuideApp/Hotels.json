@@ -1,0 +1,53 @@
+{
+    "result": [
+        {
+            "hotel_id": "1",
+            "hotelName": "AlizH otel",
+            "hotelCountry": "Thailand",
+            "hotelCity": "Nonthaburi",
+            "hotelImageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+            "category": "Hotel",
+            "hotelDescription": "Set in Nonthaburi, Aliz Hotel offers 4-star accommodation with private balconies. Featuring a terrace, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom."
+            
+        },        {
+            "hotel_id": "2",
+            "hotelName": "De L’Europe Amsterdam Hotel",
+            "hotelCountry": "Holland",
+            "hotelCity": "Amsterdam",
+            "hotelImageUrl": "https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/42197895.jpg?k=d472b427e9e01119a333a59086020a8ff885abc51aa2b74614e1b2f70ec8a159&o=&hp=1",
+            "category": "Hotel",
+            "hotelDescription": "Founded on the remains of a late medieval fortress, De L'Europe Amsterdam offers luxurious accommodation along the Amstel River, in the heart of the city. This 5-star hotel includes a fitness area, spa and wellness facilities and a waterside terrace. Valet parking is available at an additional charge.The guest rooms and suites blend a classic design, including a Carrara marble bathroom, with contemporary amenities such as Apple TV, A Bose surround sound system and motion detecting floor lighting. A nespresso machine and international adapters are also featured. Some rooms and suites offer a balcony overlooking the Amstel and historic centre of Amsterdam. Dutch Masters replicas are displayed in each room in partnership with the Rijksmuseum"
+            
+        },
+        {
+            "hotel_id": "3",
+            "hotelName": "Refinery Hotel",
+            "hotelCountry": "America",
+            "hotelCity": "Newyork",
+            "hotelImageUrl": "https://images.trvl-media.com/hotels/6000000/5560000/5558100/5558022/85e12e47.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+            "category": "Hotel",
+            "hotelDescription": "Located 2.8 km from the airport, Refinery Hotel offers a rooftop terrace and is just a 5-minute drive from the Empire State Building destination. For a workout, guests can visit the gym or grab a bite at the Parker and Quinn restaurant, which serves American cuisine and is open for breakfast, lunch and dinner. Also, this luxury hotel is just a 10-minute walk from the 5th Avenue and Bryant Park destination. The helpful staff and the bar are well rated by guests. The accommodation is close to public transportation, 42 St. - Bryant Pk. The station is 3 minutes and 34 St. Station (Herald Square) is a 5-minute walk away."
+            
+        },
+        {
+            "hotel_id": "4",
+            "hotelName": "Burj Al Arab Jumeirah Hotel",
+            "hotelCountry": "United Arab Emirates",
+            "hotelCity": "Dubai",
+            "hotelImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLI9Ntdklm3V1Z74IGnF_TtxQtpnQ6N-YrA&usqp=CAU",
+            "category": "Hotel",
+            "hotelDescription": "Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea, 9 signature restaurants and a full-service spa. Guests may arrive at the property by chauffeur-driven fleets of Rolls-Royce's or alternatively by a dedicated helicopter transfer service. The terrace offers two swimming pools, 32 luxury cabanas, a restaurant and a bar."
+            
+        },
+        {
+            "hotel_id": "5",
+            "hotelName": "Bellagio Hotel",
+            "hotelCountry": "United States",
+            "hotelCity": "Las Vegas",
+            "hotelImageUrl": "https://travelnevada.com/wp-content/uploads/2014/04/Bellagio_Desktop-scaled.jpg",
+            "category": "Hotel",
+            "hotelDescription": "Set behind the famous Fountains of Bellagio, this luxury Las Vegas Strip hotel and casino offers multiple dining options and elegant rooms with marble en suite bathrooms.The richly-decorated rooms of the Bellagio are equipped with a flat-screen satellite TV and electronic drapes. Soft bathrobes, a minibar and an iPod docking station are included.Bellagio guests can enjoy one of 5 beautiful courtyard pools and lush botanical gardens.A wide-range of dining options is offered, including Sadelle's, Prime Steakhouse and the Mayfair Supper Club. Sophisticated boutique shops are also within the hotel."
+            
+        }
+    ]
+}
