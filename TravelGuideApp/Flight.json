@@ -6,7 +6,7 @@
         "total": 268570
     },
     "data": [
-        {
+        {   
             "flight_date": "2022-10-09",
             "flight_status": "scheduled",
             "departure": {

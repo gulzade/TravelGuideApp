@@ -29,7 +29,6 @@ class FlightListTableViewCell: UITableViewCell {
         flightImageView.layer.cornerRadius = 10
         flightCellView.layer.cornerRadius = 10
         flightCellView.clipsToBounds = true
-        //add a border (if required)
         
     }
     override func layoutSubviews() {

@@ -10,7 +10,7 @@ struct FlightResponse: Codable {
     var data: [FlightData]?
 }
 struct FlightData : Codable{
-    var flightDate: String?
+    var flight_date: String?
     var departure : Departure?
     var arrival: Arrival?
     var airline: Airline?

@@ -1,8 +1,8 @@
 {
     "result": [
-        {
-            "hotel_id": "1",
-            "hotelName": "AlizH otel",
+        {   
+            "hotel_id": "hotelA",
+            "hotelName": "Aliz Hotel",
             "hotelCountry": "Thailand",
             "hotelCity": "Nonthaburi",
             "hotelImageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -10,7 +10,7 @@
             "hotelDescription": "Set in Nonthaburi, Aliz Hotel offers 4-star accommodation with private balconies. Featuring a terrace, the 4-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom."
             
         },        {
-            "hotel_id": "2",
+            "hotel_id": "hotelB",
             "hotelName": "De L’Europe Amsterdam Hotel",
             "hotelCountry": "Holland",
             "hotelCity": "Amsterdam",
@@ -20,7 +20,7 @@
             
         },
         {
-            "hotel_id": "3",
+            "hotel_id": "hotelC",
             "hotelName": "Refinery Hotel",
             "hotelCountry": "America",
             "hotelCity": "Newyork",
@@ -30,7 +30,7 @@
             
         },
         {
-            "hotel_id": "4",
+            "hotel_id": "hotelD",
             "hotelName": "Burj Al Arab Jumeirah Hotel",
             "hotelCountry": "United Arab Emirates",
             "hotelCity": "Dubai",
@@ -40,7 +40,7 @@
             
         },
         {
-            "hotel_id": "5",
+            "hotel_id": "hotelE",
             "hotelName": "Bellagio Hotel",
             "hotelCountry": "United States",
             "hotelCity": "Las Vegas",
