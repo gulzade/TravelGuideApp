@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="HotelListTableViewCell" customModule="TravelGuideApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lh-k8-WnH">
+                        <rect key="frame" x="0.0" y="0.0" width="348" height="161"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlightCellImage" translatesAutoresizingMaskIntoConstraints="NO" id="eel-x6-cwE" userLabel="Hotel Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="348" height="161"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l60-Wk-cuT">
+                                <rect key="frame" x="16" y="40" width="316" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="6vo-Aw-TpH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singapure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTO-pY-Uft">
+                                <rect key="frame" x="16" y="79" width="316" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hDG-Ga-4L4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sTO-pY-Uft" firstAttribute="leading" secondItem="6lh-k8-WnH" secondAttribute="leading" constant="16" id="3qN-kj-Vv9"/>
+                            <constraint firstItem="l60-Wk-cuT" firstAttribute="top" secondItem="6lh-k8-WnH" secondAttribute="top" constant="40" id="8i5-G9-xNL"/>
+                            <constraint firstItem="eel-x6-cwE" firstAttribute="top" secondItem="6lh-k8-WnH" secondAttribute="top" id="CcO-hz-O9h"/>
+                            <constraint firstAttribute="trailing" secondItem="l60-Wk-cuT" secondAttribute="trailing" constant="16" id="Lsu-4c-hbc"/>
+                            <constraint firstItem="sTO-pY-Uft" firstAttribute="top" secondItem="l60-Wk-cuT" secondAttribute="bottom" constant="8" id="cLm-Pd-DO2"/>
+                            <constraint firstItem="l60-Wk-cuT" firstAttribute="leading" secondItem="6lh-k8-WnH" secondAttribute="leading" constant="16" id="dpE-YW-efr"/>
+                            <constraint firstAttribute="bottom" secondItem="eel-x6-cwE" secondAttribute="bottom" id="jX2-us-qXF"/>
+                            <constraint firstAttribute="trailing" secondItem="sTO-pY-Uft" secondAttribute="trailing" constant="16" id="v7P-WT-5c1"/>
+                            <constraint firstAttribute="trailing" secondItem="eel-x6-cwE" secondAttribute="trailing" id="vp9-6l-MfJ"/>
+                            <constraint firstItem="eel-x6-cwE" firstAttribute="leading" secondItem="6lh-k8-WnH" secondAttribute="leading" id="zzd-ct-NeF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6lh-k8-WnH" secondAttribute="trailing" id="RRj-He-Cc5"/>
+                    <constraint firstItem="6lh-k8-WnH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cpN-ft-t56"/>
+                    <constraint firstAttribute="bottom" secondItem="6lh-k8-WnH" secondAttribute="bottom" id="gbY-RZ-sg3"/>
+                    <constraint firstItem="6lh-k8-WnH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="w7f-P5-Ksd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hotelCountry" destination="sTO-pY-Uft" id="5Ed-nv-xds"/>
+                <outlet property="hotelImageView" destination="eel-x6-cwE" id="jj9-Ch-aKU"/>
+                <outlet property="hotelName" destination="l60-Wk-cuT" id="Snp-cd-yIW"/>
+                <outlet property="hotelView" destination="6lh-k8-WnH" id="ade-RN-ddm"/>
+            </connections>
+            <point key="canvasLocation" x="400.00000000000006" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FlightCellImage" width="388" height="185"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
